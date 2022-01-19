@@ -1,0 +1,23 @@
+.Loading__page{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.Loading__page .img1{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.Loading__page img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+}

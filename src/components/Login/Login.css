@@ -1,0 +1,256 @@
+/*-----------------------Login Banner-----------------------------r*/
+.Login__container .Login__container-wrapper{
+    position: relative;
+    background: url(../../image/wrapper.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    filter: brightness(90%);
+    opacity: 0.4;
+    transition: opacity .3s ease;
+}
+
+.Login__container .Login__logo{
+    position: absolute;
+    top: -3%;
+    left: 1%;
+}
+.Login__container .Login__logo img{
+   width: 300px;
+}
+
+.Login__container .Login__border{
+    height: 10px;
+    width: 200vh;
+    background-color: rgba(255,255,255, 0.1);
+}
+
+/*-----------------------Login Modal-----------------------------r*/
+.Login__container .Login__modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 63%;
+    width: 30%;
+    align-items: center;
+    border-radius: 30px;
+    
+}
+
+.Login__modal .Login__modal-exit{
+    height: 36px;
+    width: 36px;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    right: 6%;
+    top: 3%;
+    background-color: transparent;
+    border: none;
+}
+
+.Login__modal .Login__modal-exit:hover{
+    cursor: pointer;
+}
+
+.Login__modal .Login__modal-exit img{
+    height: 30px;
+    width: 30px;
+    
+}
+
+.Login__container .Login__modal .Login__modal-title{
+    margin-top: -7%;
+    margin-bottom: 1%;
+    font-size: 30px; 
+}
+.Login__modal .Login__modal_panel{
+    position: absolute;
+    align-items: center;
+
+}
+.Login__modal .Login__modal-panel input{
+    width: 60%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 2px solid red;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: white;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+
+.Login__modal .Login__modal-panel input:focus{
+    border: 2px solid red;
+}
+
+.Login__modal .Login__modal-panel button{
+    width: 70%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: white;
+    background-color: #CD0000;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    transition: background-color .3s ease;
+}
+
+.Login__modal .Login__modal-panel button:hover{
+    background-color: #EA0707;
+    cursor: pointer;
+}
+
+.Login__modal .Login__modal-panel button:active{
+    cursor: pointer;
+    box-shadow: inset 6px 6px 6px rgba(0, 0, 0, 0.4);
+}
+/*-----------------------Login Modal CheckBox and Forgot pass-----------------------------r*/
+.Login__modal .Login__modal-tocheck{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Login__modal .Login__modal-tocheck .Login__tocheck-Bx span{
+    color: #8C8C8C;
+}
+
+.Login__modal .Login__modal-tocheck span{
+    font-size: 14px;
+}
+
+.Login__modal .Login__modal-tocheck .Login__tocheck-Bx input[type="checkbox"]{
+    background-color: transparent;
+    overflow: hidden;
+}
+/*-----------------------Login Modal Divided Bar-----------------------------r*/
+.Login__modal .Login__modal-divide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login__modal .Login__modal-divide .Login__modal-divide-bar{
+    border: 1px solid red;
+    height: 0.5%;
+    width: 29%;
+    margin: 1%;
+}
+/*-----------------------Login Modal Button account-----------------------------r*/
+.Login__modal .Login__modal-account{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.Login__modal .Login__modal-account .Login__modal-account-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 40px;
+    color: #8C8C8C;
+    margin: 2%;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 5px;
+    transition: background-color .3s ease;
+}
+
+.Login__modal .Login__modal-account .Login__modal-account-btn:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.Login__modal .Login__modal-account .Login__modal-account-btn:active{
+    background-color: #DDD7D7;
+    cursor: pointer;
+}
+/*-----------------------Login Modal Text Link---------------*/
+.Login__modal p a{
+    color: rgba(229, 9, 29, 0.75);
+}
+.Login__modal p a:hover{
+    color: #E50914;
+}
+
+.Login__modal p a:active{
+    color: white;
+}
+/*-----------------------Screen----------------------------r*/
+
+@media screen and (max-width: 768px) {
+    .Login__container .Login__modal{
+        width: 48%;
+        height: 61%;
+        margin-top: 3%;
+        padding-top: 2%;
+    }
+
+    .Login__container .Login__modal .Login__modal-title{
+        font-size: 20px;
+
+    }
+
+    .Login__container .Login__modal .Login__modal-content{
+        font-size: 12px;
+    }
+
+    .Login__modal .Login__modal-tocheck span{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .Login__container .Login__modal{
+        width: 70%;
+        height: 61%;
+        margin-top: 5%;
+        padding-top: 3%;
+    }
+
+    .Login__container .Login__modal .Login__modal-title{
+        font-size: 16px;
+
+    }
+
+    .Login__container .Login__modal .Login__modal-content{
+        font-size: 10px;
+    }
+
+    .Login__modal .Login__modal-tocheck span{
+        font-size: 10px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .Login__container .Login__modal{
+        width: 32%;
+        height: 67%;
+    }
+    .Login__container .Login__modal .Login__modal-title{
+        font-size: 24px;
+    }
+
+    .Login__container .Login__modal .Login__modal-content{
+        font-size: 16px;
+    }
+
+    .Login__modal .Login__modal-tocheck span{
+        font-size: 16px;
+    }
+}

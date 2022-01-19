@@ -1,0 +1,48 @@
+.paginationBttns{
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7%;
+}
+
+.paginationBttns a{
+    padding: 7px 12px;
+    margin: 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(38, 37, 37, 0.7);
+}
+
+.paginationBttns a:hover{
+    background-color: red;
+}
+
+
+.activePage a{
+    background-color: red;
+}
+
+.pagination__bottom{
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+.pagination__bottom input[type="text"]{
+    padding: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.pagination__bottom button{
+    padding: 10px 20px;
+    background-color: #CD0000;
+    border: none;
+    color: white;
+}

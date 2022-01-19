@@ -1,0 +1,248 @@
+/*-----------------------Signup Banner-----------------------------r*/
+.Signup__container .Signup__container-wrapper{
+    position: relative;
+    background: url(../../image/wrapper.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    filter: brightness(90%);
+    opacity: 0.4;
+    transition: opacity .3s ease;
+}
+
+.Signup__container .Signup__logo{
+    position: absolute;
+    top: -3%;
+    left: 1%;
+}
+.Signup__container .Signup__logo img{
+   width: 300px;
+}
+
+.Signup__container .Signup__border{
+    height: 10px;
+    width: 200vh;
+    background-color: rgba(255,255,255, 0.1);
+}
+
+/*-----------------------Signup Modal-----------------------------r*/
+.Signup__container .Signup__modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 70%;
+    width: 30%;
+    align-items: center;
+    border-radius: 30px;
+    
+}
+
+.Signup__modal .Signup__modal-exit{
+    height: 36px;
+    width: 36px;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    background-color: transparent;
+    border: none;
+}
+
+.Signup__modal .Signup__modal-exit:hover{
+    cursor: pointer;
+}
+
+.Signup__modal .Signup__modal-exit img{
+    height: 30px;
+    width: 30px;
+    
+}
+
+.Signup__container .Signup__modal .Signup__modal-title{
+    margin-top: -7%;
+    margin-bottom: 1%;
+    font-size: 30px; 
+}
+
+.Signup__modal .Signup__modal_panel{
+    position: absolute;
+    align-items: center;
+
+}
+.Signup__modal .Signup__modal-panel input{
+    width: 60%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 2px solid red;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: white;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+
+.Signup__modal .Signup__modal-panel input:focus{
+    border: 2px solid red;
+}
+
+.Signup__modal .Signup__modal-panel button{
+    width: 70%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: white;
+    background-color:#CD0000;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    transition: background-color .3s ease;
+}
+
+.Signup__modal .Signup__modal-panel button:hover{
+    background-color: #EA0707;
+    cursor: pointer;
+}
+
+.Signup__modal .Signup__modal-panel button:active{
+    cursor: pointer;
+    box-shadow: inset 6px 6px 6px rgba(0, 0, 0, 0.4);
+}
+
+
+/*-----------------------Signup Modal CheckBox and Forgot pass-----------------------------r*/
+.Signup__modal .Signup__modal-tocheck{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.Signup__modal .Signup__modal-tocheck span{
+    font-size: 14px;
+}
+/*-----------------------Signup Modal Divided Bar-----------------------------r*/
+.Signup__modal .Signup__modal-divide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Signup__modal .Signup__modal-divide .Signup__modal-divide-bar{
+    border: 1px solid red;
+    height: 0.5%;
+    width: 29%;
+    margin: 1%;
+}
+/*-----------------------Signup Modal Button account-----------------------------r*/
+.Signup__modal .Signup__modal-account{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.Signup__modal .Signup__modal-account .Signup__modal-account-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 40px;
+    color: white;
+    margin: 2%;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 5px;
+    transition: background-color .3s ease;
+}
+
+.Signup__modal .Signup__modal-account .Signup__modal-account-btn:hover{
+    background-color: red;
+    cursor: pointer;
+}
+/*--------------------------------Sign up Text Link*/
+.Signup__modal p a{
+    color: rgba(229, 9, 29, 0.75);
+}
+.Signup__modal p a:hover{
+    color: #E50914;
+}
+
+.Signup__modal p a:active{
+    color: white;
+}
+/*-----------------------Screen----------------------------r*/
+
+@media screen and (max-width: 900px) {
+    .Signup__container .Signup__modal{
+        width: 54%;
+        height: 65%;
+        margin-top: 3%;
+        padding-top: 1%;
+    }
+
+    .Signup__container .Signup__modal .Signup__modal-title{
+        font-size: 20px;
+
+    }
+
+    .Signup__container .Signup__modal .Signup__modal-content{
+        font-size: 12px;
+    }
+
+    .Signup__modal .Signup__modal-tocheck span{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .Signup__container .Signup__modal{
+        width: 70%;
+        height: 65%;
+        margin-top: 12%;
+        padding-top: 3%;
+    }
+
+    .Signup__container .Signup__modal .Signup__modal-title{
+        font-size: 16px;
+
+    }
+
+    .Signup__container .Signup__modal .Signup__modal-content{
+        font-size: 10px;
+    }
+
+    .Signup__modal .Signup__modal-tocheck span{
+        font-size: 10px;
+    }
+
+}
+
+
+@media screen and (min-width: 900px) {
+    .Signup__container .Signup__modal{
+        width: 32%;
+        height: 66%;
+        margin-top: 1%;
+    }
+    .Signup__container .Signup__modal .Signup__modal-title{
+        font-size: 24px;
+    }
+
+    .Signup__container .Signup__modal .Signup__modal-content{
+        font-size: 16px;
+    }
+
+    .Signup__modal .Signup__modal-tocheck span{
+        font-size: 13px;
+
+    }
+}

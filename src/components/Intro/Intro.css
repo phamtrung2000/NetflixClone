@@ -1,0 +1,282 @@
+.intro {
+  color: white;
+  background-color: black;
+}
+.flex {
+  display: flex !important;
+}
+.intro__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  border-bottom: 5px grey solid;
+}
+.intro__info .intro__info-wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+.intro__info .intro__info-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+.intro__info .intro__info-detail {
+  margin-top: 28px;
+  font-size: 24px;
+}
+.intro__info .intro__info-left {
+  width: 50%;
+}
+.intro__info .intro__info-right {
+  width: 50%;
+}
+
+.intro__begin {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  /* background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/a1a5d7dc-aedf-4570-b58d-693af16e1445/f203629f-76ad-4418-9fc3-166ce5662a90/VN-vi-20211020-popsignuptwoweeks-perspective_alpha_website_small.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+  border-bottom: 5px grey solid;
+  position: relative;
+  z-index: 1;
+}
+.intro__begin .intro__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.intro__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+  margin: 0 auto;
+}
+.intro__navbar .intro__navbar-logo {
+  width: 134px;
+  height: 45px;
+}
+.intro__navbar .intro__navbar-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro__navbar-right {
+  display: flex;
+}
+.intro__navbar-right .intro__language {
+  font-size: 0.875rem;
+  border: 1px solid #aaa;
+  padding: 7px 0;
+  margin-right: 2rem;
+  position: relative;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: black;
+}
+.intro__navbar-right .intro__language svg {
+  margin: 0 5px;
+}
+.intro__navbar-right .intro__language .intro__language-choice {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+}
+.intro__navbar-right .intro__language .intro__language-choice span {
+  background: grey;
+  text-align: center;
+  cursor: pointer;
+}
+.intro__navbar-right .intro__language .intro__language-choice span:hover {
+  background: rgb(113, 113, 236);
+}
+
+.intro__navbar-right .intro__login {
+  background: var(--red);
+  padding: 15px 30px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.intro__navbar-right .intro__login:hover {
+  background-color: var(--red1);
+}
+.intro__middle {
+  text-align: center;
+  width: 70vw;
+  margin: 10vh auto;
+}
+.intro__title {
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 79, 69px;
+}
+.intro__detail {
+  margin-top: 25px;
+  font-size: 36px;
+  line-height: 42, 19px;
+}
+.start__button {
+  margin-top: 25px;
+  display: inline-block;
+  padding: 29px 72px;
+  font-size: 26px;
+  background-color: #c80f0f;
+  cursor: pointer;
+}
+.start__button svg {
+  transform: translateX(50%);
+  transition: all 0.2s linear;
+}
+.start__button:hover {
+  background-color: #ea0707;
+}
+.start__button:active {
+  box-shadow: inset 6px 6px 6px rgba(0, 0, 0, 0.4);
+}
+.start__button:hover svg {
+  transform: translateX(120%);
+}
+
+.intro__info.intro__info1 .intro__info-left {
+}
+.intro__info.intro__info1 .intro__info-right img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ======RESPONSIVE================ */
+
+/* =====================INTRO__BEGIN================= */
+@media (max-width: 480px) and (min-width: 320px) {
+  .intro__navbar .intro__navbar-logo {
+    width: 88px;
+    height: 24px;
+  }
+  .intro__navbar-right .intro__login {
+    font-size: 0.875rem;
+    padding: 7px 5px;
+  }
+  .intro__navbar-right .intro__language {
+    margin-right: 0.75rem;
+  }
+  .intro__title {
+    font-size: 1.75rem;
+  }
+  .intro__detail {
+    font-size: 1.125rem;
+    margin-top: 1rem;
+  }
+  .start__button {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+  }
+
+  .intro__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    border-bottom: 5px grey solid;
+    /* width: 90%; */
+    padding: 40px 0;
+  }
+  .intro__info .intro__info-wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .intro__info .intro__info-title {
+    font-size: 1.625rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .intro__info .intro__info-detail {
+    margin: 0.75em 0 0.25em;
+    font-size: 1.125rem;
+    text-align: center;
+  }
+  .intro__info .intro__info-left {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .intro__info .intro__info-left img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .intro__info .intro__info-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+  /* .intro__navbar .intro__navbar-logo {
+    width: 100px;
+    height: 24px;
+  } */
+  /* .intro__navbar-right .intro__login {
+    font-size: 0.875rem;
+  } */
+  /* .intro__navbar-right .intro__language {
+    margin-right: rem;
+  } */
+  .intro__title {
+    font-size: 2.25rem;
+  }
+  .intro__detail {
+    font-size: 1.75rem;
+    margin-top: 1.5rem;
+  }
+  .start__button {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+  }
+
+  .intro__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    border-bottom: 5px grey solid;
+    /* width: 90%; */
+    padding: 60px 0;
+  }
+  .intro__info .intro__info-wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .intro__info .intro__info-title {
+    font-size: 1.625rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .intro__info .intro__info-detail {
+    margin: 0.75em 0 0.25em;
+    font-size: 1.125rem;
+    text-align: center;
+  }
+  .intro__info .intro__info-left {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .intro__info .intro__info-right {
+    width: 100%;
+  }
+}
